@@ -1,0 +1,12 @@
+<body>
+    Artist Results :
+    <ul>
+        {{#each items}}
+        <li>
+            <h1>{{this.name}}</h1>
+            <img src='{{this.images.0.url}}' alt="image" >
+            <a href='/albums/{{this.id}}'>View Artist Details</a>
+        </li>
+        {{/each}}
+    </ul>
+</body>
